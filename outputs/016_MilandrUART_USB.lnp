@@ -1,0 +1,19 @@
+--cpu Cortex-M3
+".\outputs\gpio.o"
+".\outputs\main.o"
+".\outputs\max31865.o"
+".\outputs\system.o"
+".\outputs\uart.o"
+".\outputs\startup_mdr32f9q2i.o"
+".\outputs\system_mdr32f9q2i.o"
+".\outputs\mdr32fxqi_port.o"
+".\outputs\mdr32fxqi_rst_clk.o"
+".\outputs\mdr32fxqi_ssp.o"
+".\outputs\mdr32fxqi_uart.o"
+".\outputs\mdr32fxqi_usb.o"
+".\outputs\mdr32fxqi_usb_cdc.o"
+".\outputs\mdr32fxqi_usb_device.o"
+--strict --scatter ".\outputs\016_MilandrUART_USB.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\016_MilandrUART_USB.map" -o .\outputs\016_MilandrUART_USB.axf

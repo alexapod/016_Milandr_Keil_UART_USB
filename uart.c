@@ -1,0 +1,178 @@
+
+/* Назначение:
+ * - Инициализация UART2 (115200, 8N1)
+ * - Обработка команд от пользователя
+ * - Вывод: меню, статус, управление LED, температура
+ */
+
+#define _ISOC99_SOURCE
+
+#include "uart.h"
+
+#include <ctype.h>
+#include <stdio.h>
+#include <math.h>
+
+#include "gpio.h"
+#include "max31865.h"
+#include "system.h"
+
+// Внешние переменные состояния светодиодов
+extern volatile uint8_t auto_temp_enabled;
+extern volatile uint8_t led1_enabled, led2_enabled, led3_enabled,led4_enabled;
+
+/*=====================================================================================
+   ИНИЦИАЛИЗАЦИЯ UART2
+=====================================================================================*/
+
+void init_UART(void) {
+    // Включаем тактирование для PORTD и UART2
+    RST_CLK_PCLKcmd(RST_CLK_PCLK_PORTD | RST_CLK_PCLK_UART2, ENABLE);
+
+    // Настройка PB5 (TX) и PB6 (RX)
+    PORT_InitTypeDef portInit;
+    PORT_StructInit(&portInit);
+    portInit.PORT_Pin = UART_RX | UART_TX;
+    portInit.PORT_OE = PORT_OE_IN;         // Вход (для альтернативной функции)
+    portInit.PORT_FUNC = PORT_FUNC_ALTER;  // Альтернативная функция (UART)
+    portInit.PORT_MODE = PORT_MODE_DIGITAL;
+    portInit.PORT_SPEED = PORT_SPEED_MAXFAST;
+    PORT_Init(MDR_PORTD, &portInit);
+
+    // Делитель частоты
+    UART_BRGInit(MDR_UART2, UART_HCLKdiv1);
+
+    // Конфигурация UART
+    UART_InitTypeDef uartInit;
+    UART_StructInit(&uartInit);
+    uartInit.UART_BaudRate = 115200;
+    uartInit.UART_WordLength = UART_WordLength8b;
+    uartInit.UART_StopBits = UART_StopBits1;
+    uartInit.UART_Parity = UART_Parity_No;
+    uartInit.UART_FIFOMode = UART_FIFO_OFF;
+    UART_Init(MDR_UART2, &uartInit);
+    UART_Cmd(MDR_UART2, ENABLE);
+}
+
+/*=====================================================================================
+   МЕНЮ И СТАТУС
+=====================================================================================*/
+
+// Показать главное меню
+
+void show_menu(void) {
+    send_string("\r\n");
+    send_string("---------- LED & SENSOR CONTROL ---------\r\n");
+    send_string("Commands:\r\n");
+    send_string("  H/h - Help\r\n");
+    send_string("  S/s - Show system status\r\n");
+    send_string("  L/l - Verify LEDs: ON -> OFF\r\n");
+    send_string("  T/t - Read temperature (once)\r\n");
+    send_string("  A/a - Toggle auto-read (3s interval)\r\n");
+    send_string("  1..4 - Toggle LED VD1..VD6\r\n");
+    send_string("----------------------------------------\r\n");
+    send_string("\r\n");
+}
+
+// Показать состояние всех светодиодов
+
+void show_status(void) {
+    char msg[128];
+    sprintf(msg,
+            "Status:\r\n"
+            "  LED1 (VD1): %s\r\n"
+            "  LED2 (VD2): %s\r\n"
+            "  LED3 (VD3): %s\r\n"
+            "  LED4 (VD4): %s\r\n",
+            led1_enabled ? "ON" : "OFF", led2_enabled ? "ON" : "OFF",
+            led3_enabled ? "ON" : "OFF", led4_enabled ? "ON" : "OFF");
+
+    send_string(msg);
+    // send_string("\r\n> ");
+}
+
+/*=====================================================================================
+   ОБРАБОТКА КОМАНД
+=====================================================================================*/
+
+void process_immediate_command(uint8_t cmd) {
+
+        // Фильтр: только печатаемые ASCII символы
+    if (cmd < 32 || cmd > 126) return;
+
+    char upper_cmd = toupper(cmd);
+    
+    switch (upper_cmd) {
+    case 'H':
+        show_menu();
+        break;
+
+    case 'S':
+        show_status();
+        break;
+
+    case 'L':
+        send_string("Verify LEDs: ALL ON... ");
+        // Включаем все
+        led1_enabled = led2_enabled = led3_enabled = led4_enabled = 1;
+        LED_ON(LED_ALL);
+        delay_ms(1000);
+        send_string("OFF\r\n");
+        // Выключаем все
+        led1_enabled = led2_enabled = led3_enabled = led4_enabled = 0;
+
+        LED_OFF(LED_ALL);
+        break;
+
+    case 'T':
+        send_string("TEMP: Reading...\r\n");
+        float t1 = MAX31865_ReadTemperature(1);
+
+        char msg[128];
+
+        if (t1 < -990.0f)
+            sprintf(msg, "  T1 = ERROR (no sensor)\r\n");
+        else
+            sprintf(msg, "  T1 = %.1f C\r\n", t1);
+        send_string(msg);
+        //auto_temp_enabled = 0;
+        break;
+
+    case 'A':
+        auto_temp_enabled = !auto_temp_enabled;
+        if (auto_temp_enabled)
+            send_string("AUTO-READ TEMPERATURE: ENABLED (every 3s)\r\n");
+        else
+            send_string("AUTO-READ TEMPERATURE: DISABLED\r\n");
+        break;
+
+    // --- Управление отдельными светодиодами ---
+    case '1':
+        led1_enabled = !led1_enabled;
+        set_led_state(1, led1_enabled);
+        send_string(led1_enabled ? "LED1 (VD1): ON\r\n" : "LED1 (VD1): OFF\r\n");
+        break;
+
+    case '2':
+        led2_enabled = !led2_enabled;
+        set_led_state(2, led2_enabled);
+        send_string(led2_enabled ? "LED2 (VD2): ON\r\n" : "LED2 (VD2): OFF\r\n");
+        break;
+
+    case '3':
+        led3_enabled = !led3_enabled;
+        set_led_state(3, led3_enabled);
+        send_string(led3_enabled ? "LED3 (VD3): ON\r\n" : "LED3 (VD3): OFF\r\n");
+        break;
+
+    case '4':
+        led4_enabled = !led4_enabled;
+        set_led_state(4, led4_enabled);
+        send_string(led4_enabled ? "LED4 (VD4): ON\r\n" : "LED4 (VD4): OFF\r\n");
+        break;
+
+    default:
+        send_string("Unknown command. Type 'H' for help.\r\n");
+        break;
+    }
+}
