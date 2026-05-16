@@ -70,6 +70,8 @@ void show_menu(void) {
     send_all("  T/t - Read temperature (once)\r\n");
     send_all("  A/a - Toggle auto-read (3s interval)\r\n");
     send_all("  1..4 - Toggle LED VD1..VD6\r\n");
+    // В show_menu()
+send_all("  R/r - Reboot device (clears USB state)\r\n");
     send_all("----------------------------------------\r\n");
     send_all("\r\n");
 }
@@ -97,11 +99,11 @@ void show_status(void) {
 
 void process_immediate_command(uint8_t cmd) {
 
-    // Фильтр: только печатаемые ASCII символы
+        // Фильтр: только печатаемые ASCII символы
     if (cmd < 32 || cmd > 126) return;
 
     char upper_cmd = toupper(cmd);
-
+    
     switch (upper_cmd) {
     case 'H':
         show_menu();
@@ -145,6 +147,13 @@ void process_immediate_command(uint8_t cmd) {
         else
             send_all("AUTO-READ TEMPERATURE: DISABLED\r\n");
         break;
+
+        // В process_immediate_command()
+case 'R':
+    send_all("=== REBOOTING ===\r\n");
+    delay_ms(100);
+    NVIC_SystemReset();
+    break;
 
     // --- Управление отдельными светодиодами ---
     case '1':

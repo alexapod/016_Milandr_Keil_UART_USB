@@ -44,7 +44,7 @@ void init_USB(void) {
     USB_DevicePowerOn();
     USB_DEVICE_HANDLE_RESET;
     NVIC_EnableIRQ(USB_IRQn);
-
+    
     delay_ms(100);
 
     static uint8_t usb_rx_buffer[64];

@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\outputs\016_MilandrUART_USB.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\outputs\016_MilandrUART_USB.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Sat May 16 10:17:04 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Sat May 16 11:48:11 2026
 <BR><P>
 <H3>Maximum Stack Usage =        568 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -485,7 +485,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
 </UL>
-<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
 </UL>
 
 <P><STRONG><a name="[44]"></a>__2sprintf</STRONG> (Thumb, 34 bytes, Stack size 32 bytes, noretval__2sprintf.o(.text))
@@ -495,7 +495,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sputc
 <LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
 </UL>
-<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
 <LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -674,8 +674,8 @@ Global Symbols
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSP_SendData
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSP_GetFlagStatus
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_hex
-<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_decimal
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_string
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_decimal
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_SetBits
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_ResetBits
@@ -699,7 +699,7 @@ Global Symbols
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_SetBits
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_ResetBits
 </UL>
-<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
 <LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -713,8 +713,8 @@ Global Symbols
 
 <P><STRONG><a name="[5d]"></a>PORT_ResetBits</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, mdr32fxqi_port.o(.text.PORT_ResetBits))
 <BR><BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MAX31865_ReadRTD
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MAX31865_ReadTemperature
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MAX31865_Init
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;connect_animation
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_led_state
@@ -723,8 +723,8 @@ Global Symbols
 
 <P><STRONG><a name="[5f]"></a>PORT_SetBits</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, mdr32fxqi_port.o(.text.PORT_SetBits))
 <BR><BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MAX31865_ReadRTD
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MAX31865_ReadTemperature
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MAX31865_Init
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;connect_animation
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_led_state
@@ -772,9 +772,9 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[5a]"></a>RST_CLK_PCLKcmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, mdr32fxqi_rst_clk.o(.text.RST_CLK_PCLKcmd))
-<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_USB
-<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MAX31865_Init
+<BR><BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MAX31865_Init
 <LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_UART
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_USB
 <LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_GPIO
 </UL>
 
@@ -898,7 +898,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EP_doDataIn
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_usb
+<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_all
 </UL>
 
 <P><STRONG><a name="[76]"></a>USB_CDC_SetLineCoding</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, system.o(.text.USB_CDC_SetLineCoding))
@@ -1131,7 +1131,7 @@ Global Symbols
 
 <P><STRONG><a name="[5e]"></a>delay_ms</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, system.o(.text.delay_ms))
 <BR><BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MAX31865_ReadRTD
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MAX31865_Init
 <LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;connect_animation
@@ -1176,7 +1176,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[a2]"></a>init_USB</STRONG> (Thumb, 284 bytes, Stack size 32 bytes, system.o(.text.init_USB))
+<P><STRONG><a name="[a2]"></a>init_USB</STRONG> (Thumb, 176 bytes, Stack size 32 bytes, system.o(.text.init_USB))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = init_USB &rArr; USB_CDC_Reset &rArr; USB_EP_doDataOut
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_CDC_Init
@@ -1190,22 +1190,22 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[3c]"></a>main</STRONG> (Thumb, 680 bytes, Stack size 152 bytes, main.o(.text.main))
+<P><STRONG><a name="[3c]"></a>main</STRONG> (Thumb, 868 bytes, Stack size 152 bytes, main.o(.text.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 568 + Unknown Stack Size
 <LI>Call Chain = main &rArr; process_immediate_command &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fcmpge
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fcmpge
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_usb
-<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MAX31865_ReadTemperature
-<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_decimal
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_menu
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_USB
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_string
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_decimal
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_menu
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MAX31865_ReadTemperature
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_all
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MAX31865_Init
 <LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_UART
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_USB
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_CPU
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;connect_animation
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
@@ -1215,23 +1215,33 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[aa]"></a>process_immediate_command</STRONG> (Thumb, 664 bytes, Stack size 288 bytes, uart.o(.text.process_immediate_command))
+<P><STRONG><a name="[a8]"></a>process_immediate_command</STRONG> (Thumb, 664 bytes, Stack size 288 bytes, uart.o(.text.process_immediate_command))
 <BR><BR>[Stack]<UL><LI>Max Depth = 416 + Unknown Stack Size
 <LI>Call Chain = process_immediate_command &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fcmpge
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fcmpge
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 <LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;toupper
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_menu
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MAX31865_ReadTemperature
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_menu
-<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_string
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_all
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_led_state
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_SetBits
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_ResetBits
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a6]"></a>send_all</STRONG> (Thumb, 118 bytes, Stack size 16 bytes, system.o(.text.send_all))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = send_all &rArr; USB_CDC_SendData &rArr; USB_EP_doDataIn &rArr; USB_EP_sendInDataPortion
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_CDC_SendData
+</UL>
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_menu
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[6a]"></a>send_decimal</STRONG> (Thumb, 102 bytes, Stack size 20 bytes, system.o(.text.send_decimal))
@@ -1249,34 +1259,24 @@ Global Symbols
 
 <P><STRONG><a name="[59]"></a>send_string</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, system.o(.text.send_string))
 <BR><BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MAX31865_ReadRTD
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MAX31865_ReadTemperature
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_menu
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MAX31865_Init
 <LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[a9]"></a>send_usb</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, system.o(.text.send_usb))
-<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = send_usb &rArr; USB_CDC_SendData &rArr; USB_EP_doDataIn &rArr; USB_EP_sendInDataPortion
-</UL>
-<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_CDC_SendData
-</UL>
-<BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[ab]"></a>set_led_state</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, gpio.o(.text.set_led_state))
 <BR><BR>[Calls]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_SetBits
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_ResetBits
 </UL>
-<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
 </UL>
 
-<P><STRONG><a name="[a7]"></a>show_menu</STRONG> (Thumb, 112 bytes, Stack size 8 bytes, uart.o(.text.show_menu))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = show_menu
+<P><STRONG><a name="[aa]"></a>show_menu</STRONG> (Thumb, 112 bytes, Stack size 8 bytes, uart.o(.text.show_menu))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = show_menu &rArr; send_all &rArr; USB_CDC_SendData &rArr; USB_EP_doDataIn &rArr; USB_EP_sendInDataPortion
 </UL>
-<BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_string
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_all
 </UL>
-<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
 <LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -1374,10 +1374,10 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_f2d
 </UL>
 
-<P><STRONG><a name="[a6]"></a>__aeabi_f2d</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, f2d.o(x$fpl$f2d))
+<P><STRONG><a name="[a7]"></a>__aeabi_f2d</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, f2d.o(x$fpl$f2d))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_f2d
 </UL>
-<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
 <LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -1414,10 +1414,10 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fcmpge
 </UL>
 
-<P><STRONG><a name="[a8]"></a>__aeabi_fcmpge</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, fcmp.o(x$fpl$fcmp))
+<P><STRONG><a name="[a9]"></a>__aeabi_fcmpge</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, fcmp.o(x$fpl$fcmp))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_fcmpge
 </UL>
-<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_immediate_command
 <LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
