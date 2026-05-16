@@ -11,6 +11,6 @@
   C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_usb.h \
   C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_device.h \
   C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_CDC.h \
+  uart.h gpio.h usb.h max31865.h \
   C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_handlers.h \
-  C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_default_handlers.h \
-  uart.h gpio.h
+  C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_default_handlers.h

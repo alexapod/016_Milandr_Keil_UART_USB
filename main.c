@@ -1,4 +1,27 @@
-// main.c
+// <h> JTAG pins protection for MCU MDR32F9Q2I, K1986VE9xI and MDR32FG16S1QI
+// <i> Prevents RXTX and OE bits setting for JTAG when doing GPIO read-modify-write
+// <i> Uncomment the definition(s) below to define used JTAG port(s).
+// <i> Leave all commented/unchecked if there is no GPIO pins combined with JTAG.
+
+// <c> JTAG_A pins protection
+//#define USE_JTAG_A
+// </c>
+
+// <c> JTAG_B pins protection
+//#define USE_JTAG_B
+// </c>
+// </h>
+
+// <o> HSE clock value [Hz]
+// <i> Default: 8000000 (8MHz)
+//#define HSE_Value       ((uint32_t)8000000)
+// <o> HSE2 clock value [Hz] for MDR32F1QI, K1986VE1xI
+
+// Тестовый режим (раскомментировать для вывода без датчиков)
+// #define MAX31865_TEST_MODE
+// в max31865.h
+
+//#define HSE_Value ((uint32_t)16000000)
 #define _ISOC99_SOURCE
 #include <stdio.h>
 #include <math.h>
@@ -6,6 +29,7 @@
 #include "max31865.h"
 #include "system.h"
 #include "uart.h"
+#include "usb.h"
 
 volatile uint8_t system_ready = 0;           // Было uart_ready
 volatile uint8_t auto_temp_enabled = 0;

@@ -19,27 +19,22 @@
 #include "MDR32FxQI_usb_device.h"
 #include "MDR32FxQI_usb_CDC.h"
 
-// === Обработчики USB ===
-USB_Result USB_CDC_DummyDataReceive(uint8_t* Buffer, uint32_t Length);
-#include "MDR32FxQI_usb_handlers.h"
+
 
 // === Функции и переменные ===
 extern volatile uint32_t ms_ticks;
-extern volatile uint8_t usb_data_received;
+
 
 void init_CPU(void);
-void init_USB(void);
+
 void delay_ms(uint32_t ms);
 void send_char(char c);
 void send_string(const char* str);
 void send_decimal(uint32_t value);
 void send_hex(uint8_t value);
-void send_usb(const char* str);
+
 void send_all(const char* str);  // <-- НОВОЕ: отправка в оба интерфейса
 
-// === Обработчики USB CDC ===
-USB_Result USB_CDC_RecieveData(uint8_t* Buffer, uint32_t Length);
-USB_Result USB_CDC_GetLineCoding(uint16_t wINDEX, USB_CDC_LineCoding_TypeDef* DATA);
-USB_Result USB_CDC_SetLineCoding(uint16_t wINDEX, const USB_CDC_LineCoding_TypeDef* DATA);
+
 
 #endif // SYSTEM_H

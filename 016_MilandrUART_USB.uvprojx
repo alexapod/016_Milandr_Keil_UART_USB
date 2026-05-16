@@ -433,6 +433,16 @@
               <FileType>5</FileType>
               <FilePath>.\uart.h</FilePath>
             </File>
+            <File>
+              <FileName>usb.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\usb.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\usb.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -4,6 +4,7 @@
 ".\outputs\max31865.o"
 ".\outputs\system.o"
 ".\outputs\uart.o"
+".\outputs\usb.o"
 ".\outputs\startup_mdr32f9q2i.o"
 ".\outputs\system_mdr32f9q2i.o"
 ".\outputs\mdr32fxqi_port.o"
