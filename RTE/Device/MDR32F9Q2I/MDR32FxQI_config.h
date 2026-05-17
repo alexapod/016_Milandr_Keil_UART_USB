@@ -290,12 +290,12 @@ extern "C" {
 
 /* USB CDC management */
 /* Uncomment the lines below to enable appropriate functionality. */
-//#define USB_CDC_STATE_REPORTING_SUPPORTED//
-//#define USB_CDC_ENCAPSULATION_SUPPORTED//
-#define USB_CDC_COMM_FEATURE_SUPPORTED//
+//#define USB_CDC_STATE_REPORTING_SUPPORTED
+//#define USB_CDC_ENCAPSULATION_SUPPORTED
+//#define USB_CDC_COMM_FEATURE_SUPPORTED//
 #define USB_CDC_LINE_CODING_SUPPORTED
-//#define USB_CDC_CONTROL_LINE_STATE_SUPPORTED//
-//#define USB_CDC_LINE_BREAK_SUPPORTED//
+//#define USB_CDC_CONTROL_LINE_STATE_SUPPORTED
+//#define USB_CDC_LINE_BREAK_SUPPORTED
 
 /* VCOM Echo example flags */
 

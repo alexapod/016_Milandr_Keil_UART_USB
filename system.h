@@ -5,7 +5,7 @@
 #include <stdint.h>
 #include "MDR32F9Q2I.h"
 
-// === Сначала HAL-драйверы ===
+// === Сначала -драйверы ===
 #include "MDR32FxQI_rst_clk.h"
 #include "MDR32FxQI_port.h"
 #include "MDR32FxQI_uart.h"

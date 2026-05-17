@@ -1,6 +1,7 @@
 #include "max31865.h"
 #include "system.h"
 #include "uart.h"
+#include "usb.h"
 #include <math.h>
 
 // === НАСТРОЙКИ ===
@@ -42,19 +43,21 @@ static uint8_t SSP2_Transfer(uint8_t data) {
 
 // --- Инициализация MAX31865 ---
 void MAX31865_Init(void) {
-    send_string("MAX31865: Initializing...\r\n");
-
+    //send_all("MAX31865: Initializing...\r\n");
+    //usb_flush();
     // === 1. Тактирование портов и SSP2 ===
     RST_CLK_PCLKcmd(RST_CLK_PCLK_PORTD | RST_CLK_PCLK_PORTB | RST_CLK_PCLK_SSP2, ENABLE);
 
     // Принудительно включаем тактирование SSP2 (бит 13)
     MDR_RST_CLK->PER_CLOCK |= (1 << 13);
 
-    if (MDR_RST_CLK->PER_CLOCK & (1 << 13)) {
-        send_string("OK: SSP2 clock enabled.\r\n");
-    } else {
-        send_string("ERROR: Failed to enable SSP2 clock!\r\n");
-    }
+    // if (MDR_RST_CLK->PER_CLOCK & (1 << 13)) {
+    //     //send_all("OK: SSP2 clock enabled.\r\n");
+    //     //usb_flush();
+    // } else {
+    //     //send_all("ERROR: Failed to enable SSP2 clock!\r\n");
+    //    // usb_flush();
+    // }
 
     PORT_InitTypeDef port;
     SSP_InitTypeDef ssp;
@@ -86,18 +89,21 @@ void MAX31865_Init(void) {
     PORT_Init(MDR_PORTB, &port);
 
     // Проверка CS
-    send_string("Testing CS (PB4)...\r\n");
+   // send_all("Testing CS (PB4)...\r\n");
     T1_CS_LOW();
     delay_ms(10);
-    send_string("CS LOW? ");
-    send_string((MDR_PORTB->RXTX & PORT_Pin_4) ? "NO" : "YES");
-    send_string("\r\n");
+   // send_all("CS LOW? ");
+   // send_all((MDR_PORTB->RXTX & PORT_Pin_4) ? "NO" : "YES");
+   // send_all("\r\n");
+   // usb_flush();
 
     T1_CS_HIGH();
     delay_ms(10);
-    send_string("CS HIGH? ");
-    send_string((MDR_PORTB->RXTX & PORT_Pin_4) ? "YES" : "NO");
-    send_string("\r\n");
+   // send_all("CS HIGH? ");
+   // send_all((MDR_PORTB->RXTX & PORT_Pin_4) ? "YES" : "NO");
+   // send_all("\r\n");
+
+   // usb_flush();
 
     // === 4. Инициализация SSP2 ===
     SSP_DeInit(MDR_SSP2);
@@ -122,9 +128,10 @@ void MAX31865_Init(void) {
     // Auto-Convert + Bias ON + 50Hz filter + 2-wire
     uint8_t config_value = 0xC1;  // 0b11000001
 
-    send_string("Writing CONFIG: 0x");
-    send_hex(config_value);
-    send_string("\r\n");
+   // send_all("Writing CONFIG: 0x");
+    //send_hex(config_value);
+   // send_all("\r\n");
+   // usb_flush();
 
     T1_CS_LOW();
     SSP2_Transfer(MAX31865_REG_CONFIG | 0x80);  // Write
@@ -139,15 +146,18 @@ void MAX31865_Init(void) {
     uint8_t read_config = SSP2_Transfer(0);
     T1_CS_HIGH();
 
-    send_string("Read CONFIG back: 0x");
-    send_hex(read_config);
-    send_string("\r\n");
+    //send_all("Read CONFIG back: 0x");
+    //send_hex(read_config);
+    //send_all("\r\n");
+    //usb_flush();
 
-    if (read_config != config_value) {
-        send_string("WARNING: CONFIG mismatch! Check wiring.\r\n");
-    } else {
-        send_string("SUCCESS: CONFIG written correctly.\r\n");
-    }
+    // if (read_config != config_value) {
+    //     send_all("WARNING: CONFIG mismatch! Check wiring.\r\n");
+    //     usb_flush();
+    // } else {
+    //     send_all("SUCCESS: CONFIG written correctly.\r\n");
+    //     usb_flush();
+    // }
 
     // Сброс флагов ошибок
     T1_CS_LOW();
@@ -161,7 +171,9 @@ void MAX31865_Init(void) {
     SSP2_Transfer(cfg);
     T1_CS_HIGH();
 
-    send_string("Fault flags cleared.\r\n");
+    // usb_flush();
+    // send_all("Fault flags cleared.\r\n");
+    // usb_flush();
 }
 
 // --- Чтение RTD ---
@@ -198,12 +210,15 @@ uint16_t MAX31865_ReadRTD(uint8_t sensor_id) {
 
     uint16_t rtd = ((msb << 8) | lsb) >> 1;
 
-    send_string("MAX31865: RTD = ");
-    send_decimal(rtd);
-    send_string(" (0x");
-    send_hex(msb);
-    send_hex(lsb);
-    send_string(")\r\n");
+    // send_all("MAX31865: RTD = ");
+    // usb_flush();
+    // send_decimal(rtd);
+    // usb_flush();
+    // send_all(" (0x");
+    // send_hex(msb);
+    // send_hex(lsb);
+    // send_all(")\r\n");
+    // usb_flush();
 
     return rtd;
 }
@@ -221,20 +236,24 @@ float MAX31865_ReadTemperature(uint8_t sensor_id) {
     uint8_t fault = SSP2_Transfer(0);
     T1_CS_HIGH();
 
-    send_string("RAW FAULT = 0x");
+    send_all("RAW FAULT = 0x");
     send_hex(fault);
-    send_string("\r\n");
+    send_usb_hex(fault);
+    send_all("\r\n");
+    usb_flush();
 
     if (fault != 0) {
-        if (fault & 0x01) send_string(" -> RTDIN- > 0.85×VBIAS (open)\r\n");
-        if (fault & 0x02) send_string(" -> RTDIN- < 0.85×VBIAS (short)\r\n");
-        if (fault & 0x04) send_string(" -> REFIN- > 0.85×VBIAS\r\n");
-        if (fault & 0x08) send_string(" -> Over/undervoltage\r\n");
+        if (fault & 0x01) send_all(" -> RTDIN- > 0.85×VBIAS (open)\r\n");
+        if (fault & 0x02) send_all(" -> RTDIN- < 0.85×VBIAS (short)\r\n");
+        if (fault & 0x04) send_all(" -> REFIN- > 0.85×VBIAS\r\n");
+        if (fault & 0x08) send_all(" -> Over/undervoltage\r\n");
+        usb_flush();
         return TEMP_ERROR_VALUE;
     }
 
     if (rtd == 0 || rtd == 0xFFFF) {
-        send_string("ERROR: RTD = 0 or 0xFFFF → check RREF and wiring!\r\n");
+        send_all("ERROR: RTD = 0 or 0xFFFF → check RREF and wiring!\r\n");
+        usb_flush();
         return TEMP_ERROR_VALUE;
     }
 
