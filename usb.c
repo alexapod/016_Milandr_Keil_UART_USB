@@ -11,6 +11,7 @@
 volatile uint8_t usb_data_received = 0;
 
 // === Буфер отправки USB (64 байта — стандартный размер пакета) ===
+
 static char usb_tx_buffer[64];
 static uint8_t usb_tx_count = 0;
 
@@ -58,11 +59,11 @@ void init_USB(void) {
 
     //delay_ms(100);
 
-    // Инициализация CDC
-    static uint8_t usb_rx_buffer[64];
+//    // Инициализация CDC
+//    static uint8_t usb_rx_buffer[64];
     // delay_ms(100);
 
-    USB_CDC_Init(usb_rx_buffer, 1, SET);
+   
     // delay_ms(100);
 
     // Анимация: мигание светодиодом

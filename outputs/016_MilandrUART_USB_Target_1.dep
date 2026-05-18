@@ -1,187 +1,187 @@
 Dependencies for Project '016_MilandrUART_USB', Target 'Target_1': (DO NOT MODIFY !)
 CompilerVersion: 6240000::V6.24::ARMCLANG
-F (.\gpio.c)(0x69E769CE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeiluVision/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/gpio.o -MMD)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D22D67)
-I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED5E)
-I (RTE\_Target_1\RTE_Components.h)(0x6A075BA3)
-I (C:\KeiluVision\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69C9646C)
-I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D67)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x69D22BF3)
+F (.\gpio.c)(0x69E769CE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeilPack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/gpio.o -MMD)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D4C07E)
+I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED60)
+I (RTE\_Target_1\RTE_Components.h)(0x6A075BA4)
+I (C:\KeilPack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69CB51F5)
+I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D68)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x69D4C07E)
 I (gpio.h)(0x69E7647C)
-I (system.h)(0x6A09A980)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_ssp.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_usb.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_device.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_CDC.h)(0x69D22BF3)
+I (system.h)(0x6A09A982)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_ssp.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_usb.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_device.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_CDC.h)(0x69D4C07E)
 F (.\gpio.h)(0x69E7647C)()
-F (.\main.c)(0x6A09E91C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeiluVision/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/main.o -MMD)
+F (.\main.c)(0x6A0ADDD9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeilPack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/main.o -MMD)
 I (gpio.h)(0x69E7647C)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h)(0x69D22BF3)
-I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED5E)
-I (RTE\_Target_1\RTE_Components.h)(0x6A075BA3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D22D67)
-I (C:\KeiluVision\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69C9646C)
-I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D67)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x69D22BF3)
-I (max31865.h)(0x6A0762D8)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_ssp.h)(0x69D22BF3)
-I (system.h)(0x6A09A980)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_usb.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_device.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_CDC.h)(0x69D22BF3)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h)(0x69D4C07E)
+I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED60)
+I (RTE\_Target_1\RTE_Components.h)(0x6A075BA4)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D4C07E)
+I (C:\KeilPack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69CB51F5)
+I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D68)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x69D4C07E)
+I (max31865.h)(0x6A0762DA)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_ssp.h)(0x69D4C07E)
+I (system.h)(0x6A09A982)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_usb.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_device.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_CDC.h)(0x69D4C07E)
 I (uart.h)(0x69E74F96)
-I (usb.h)(0x6A09B5BF)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_handlers.h)(0x6A0782C6)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_default_handlers.h)(0x69D22BF3)
-F (.\max31865.c)(0x6A09D751)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeiluVision/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/max31865.o -MMD)
-I (max31865.h)(0x6A0762D8)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D22D67)
-I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED5E)
-I (RTE\_Target_1\RTE_Components.h)(0x6A075BA3)
-I (C:\KeiluVision\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69C9646C)
-I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D67)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_ssp.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h)(0x69D22BF3)
-I (system.h)(0x6A09A980)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_usb.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_device.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_CDC.h)(0x69D22BF3)
+I (usb.h)(0x6A09B5C0)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_handlers.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_default_handlers.h)(0x69D4C07E)
+F (.\max31865.c)(0x6A09D752)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeilPack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/max31865.o -MMD)
+I (max31865.h)(0x6A0762DA)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D4C07E)
+I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED60)
+I (RTE\_Target_1\RTE_Components.h)(0x6A075BA4)
+I (C:\KeilPack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69CB51F5)
+I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D68)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_ssp.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h)(0x69D4C07E)
+I (system.h)(0x6A09A982)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_usb.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_device.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_CDC.h)(0x69D4C07E)
 I (uart.h)(0x69E74F96)
-I (usb.h)(0x6A09B5BF)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_handlers.h)(0x6A0782C6)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_default_handlers.h)(0x69D22BF3)
-F (.\max31865.h)(0x6A0762D8)()
-F (.\README.md)(0x6A075C23)()
-F (.\system.c)(0x6A09BF3C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeiluVision/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/system.o -MMD)
-I (system.h)(0x6A09A980)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D22D67)
-I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED5E)
-I (RTE\_Target_1\RTE_Components.h)(0x6A075BA3)
-I (C:\KeiluVision\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69C9646C)
-I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D67)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_ssp.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_usb.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_device.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_CDC.h)(0x69D22BF3)
+I (usb.h)(0x6A09B5C0)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_handlers.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_default_handlers.h)(0x69D4C07E)
+F (.\max31865.h)(0x6A0762DA)()
+F (.\README.md)(0x6A075C24)()
+F (.\system.c)(0x6A09BF3E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeilPack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/system.o -MMD)
+I (system.h)(0x6A09A982)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D4C07E)
+I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED60)
+I (RTE\_Target_1\RTE_Components.h)(0x6A075BA4)
+I (C:\KeilPack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69CB51F5)
+I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D68)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_ssp.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_usb.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_device.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_CDC.h)(0x69D4C07E)
 I (uart.h)(0x69E74F96)
 I (gpio.h)(0x69E7647C)
-I (usb.h)(0x6A09B5BF)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_handlers.h)(0x6A0782C6)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_default_handlers.h)(0x69D22BF3)
-F (.\system.h)(0x6A09A980)()
-F (.\uart.c)(0x6A09E755)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeiluVision/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/uart.o -MMD)
+I (usb.h)(0x6A09B5C0)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_handlers.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_default_handlers.h)(0x69D4C07E)
+F (.\system.h)(0x6A09A982)()
+F (.\uart.c)(0x6A09E756)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeilPack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/uart.o -MMD)
 I (uart.h)(0x69E74F96)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D22D67)
-I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED5E)
-I (RTE\_Target_1\RTE_Components.h)(0x6A075BA3)
-I (C:\KeiluVision\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69C9646C)
-I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D67)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D4C07E)
+I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED60)
+I (RTE\_Target_1\RTE_Components.h)(0x6A075BA4)
+I (C:\KeilPack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69CB51F5)
+I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D68)
 I (gpio.h)(0x69E7647C)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x69D22BF3)
-I (max31865.h)(0x6A0762D8)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_ssp.h)(0x69D22BF3)
-I (system.h)(0x6A09A980)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_usb.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_device.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_CDC.h)(0x69D22BF3)
-I (usb.h)(0x6A09B5BF)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_handlers.h)(0x6A0782C6)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_default_handlers.h)(0x69D22BF3)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x69D4C07E)
+I (max31865.h)(0x6A0762DA)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_ssp.h)(0x69D4C07E)
+I (system.h)(0x6A09A982)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_usb.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_device.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_CDC.h)(0x69D4C07E)
+I (usb.h)(0x6A09B5C0)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_handlers.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_default_handlers.h)(0x69D4C07E)
 F (.\uart.h)(0x69E74F96)()
-F (.\usb.h)(0x6A09B5BF)()
-F (.\usb.c)(0x6A09BCD2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeiluVision/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/usb.o -MMD)
-I (system.h)(0x6A09A980)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D22D67)
-I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED5E)
-I (RTE\_Target_1\RTE_Components.h)(0x6A075BA3)
-I (C:\KeiluVision\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69C9646C)
-I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D67)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_ssp.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_usb.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_device.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_CDC.h)(0x69D22BF3)
+F (.\usb.h)(0x6A09B5C0)()
+F (.\usb.c)(0x6A0ADDE3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeilPack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/usb.o -MMD)
+I (system.h)(0x6A09A982)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D4C07E)
+I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED60)
+I (RTE\_Target_1\RTE_Components.h)(0x6A075BA4)
+I (C:\KeilPack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69CB51F5)
+I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D68)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_ssp.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_usb.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_device.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_CDC.h)(0x69D4C07E)
 I (gpio.h)(0x69E7647C)
-I (usb.h)(0x6A09B5BF)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_handlers.h)(0x6A0782C6)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_default_handlers.h)(0x69D22BF3)
-F (RTE/Device/MDR32F9Q2I/MDR32F9Q2I.sct)(0x69D22D67)()
-F (RTE/Device/MDR32F9Q2I/MDR32FxQI_config.h)(0x6A09ED5E)()
-F (RTE/Device/MDR32F9Q2I/startup_MDR32F9Q2I.S)(0x69D22D67)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4 -MMD-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeiluVision/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION=543 -D_RTE_-o ./outputs/startup_mdr32f9q2i.o)
-F (RTE/Device/MDR32F9Q2I/system_MDR32F9Q2I.c)(0x69D22D67)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeiluVision/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/system_mdr32f9q2i.o -MMD)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D22D67)
-I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED5E)
-I (RTE\_Target_1\RTE_Components.h)(0x6A075BA3)
-I (C:\KeiluVision\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69C9646C)
-I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D67)
-F (RTE/Device/MDR32F9Q2I/system_MDR32F9Q2I.h)(0x69D22D67)()
-F (C:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_port.c)(0x69D22BF3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeiluVision/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/mdr32fxqi_port.o -MMD)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h)(0x69D22BF3)
-I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED5E)
-I (RTE\_Target_1\RTE_Components.h)(0x6A075BA3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D22D67)
-I (C:\KeiluVision\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69C9646C)
-I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D67)
-F (C:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_rst_clk.c)(0x69D22BF3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeiluVision/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/mdr32fxqi_rst_clk.o -MMD)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x69D22BF3)
-I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED5E)
-I (RTE\_Target_1\RTE_Components.h)(0x6A075BA3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D22D67)
-I (C:\KeiluVision\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69C9646C)
-I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D67)
-F (C:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_ssp.c)(0x69D22BF3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeiluVision/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/mdr32fxqi_ssp.o -MMD)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_ssp.h)(0x69D22BF3)
-I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED5E)
-I (RTE\_Target_1\RTE_Components.h)(0x6A075BA3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D22D67)
-I (C:\KeiluVision\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69C9646C)
-I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D67)
-F (C:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_uart.c)(0x69D22BF3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeiluVision/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/mdr32fxqi_uart.o -MMD)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h)(0x69D22BF3)
-I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED5E)
-I (RTE\_Target_1\RTE_Components.h)(0x6A075BA3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D22D67)
-I (C:\KeiluVision\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69C9646C)
-I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D67)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x69D22BF3)
-F (C:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_usb.c)(0x69D22BF3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeiluVision/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/mdr32fxqi_usb.o -MMD)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_usb.h)(0x69D22BF3)
-I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED5E)
-I (RTE\_Target_1\RTE_Components.h)(0x6A075BA3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D22D67)
-I (C:\KeiluVision\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69C9646C)
-I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D67)
-F (C:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/USB_Library/MDR32FxQI_usb_CDC.c)(0x69D22BF3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeiluVision/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/mdr32fxqi_usb_cdc.o -MMD)
-I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED5E)
-I (RTE\_Target_1\RTE_Components.h)(0x6A075BA3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D22D67)
-I (C:\KeiluVision\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69C9646C)
-I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D67)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_handlers.h)(0x6A0782C6)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_default_handlers.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_CDC.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_device.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_usb.h)(0x69D22BF3)
-F (C:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/USB_Library/MDR32FxQI_usb_device.c)(0x69D22BF3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeiluVision/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeiluVision/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/mdr32fxqi_usb_device.o -MMD)
-I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED5E)
-I (RTE\_Target_1\RTE_Components.h)(0x6A075BA3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D22D67)
-I (C:\KeiluVision\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69C9646C)
-I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D67)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_handlers.h)(0x6A0782C6)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_default_handlers.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_CDC.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_device.h)(0x69D22BF3)
-I (C:\KeiluVision\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_usb.h)(0x69D22BF3)
+I (usb.h)(0x6A09B5C0)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_handlers.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_default_handlers.h)(0x69D4C07E)
+F (RTE/Device/MDR32F9Q2I/MDR32F9Q2I.sct)(0x69D22D68)()
+F (RTE/Device/MDR32F9Q2I/MDR32FxQI_config.h)(0x6A09ED60)()
+F (RTE/Device/MDR32F9Q2I/startup_MDR32F9Q2I.S)(0x69D22D68)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4 -MMD-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeilPack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION=543 -D_RTE_-o ./outputs/startup_mdr32f9q2i.o)
+F (RTE/Device/MDR32F9Q2I/system_MDR32F9Q2I.c)(0x69D22D68)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeilPack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/system_mdr32f9q2i.o -MMD)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D4C07E)
+I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED60)
+I (RTE\_Target_1\RTE_Components.h)(0x6A075BA4)
+I (C:\KeilPack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69CB51F5)
+I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D68)
+F (RTE/Device/MDR32F9Q2I/system_MDR32F9Q2I.h)(0x69D22D68)()
+F (C:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_port.c)(0x69D4C07E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeilPack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/mdr32fxqi_port.o -MMD)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h)(0x69D4C07E)
+I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED60)
+I (RTE\_Target_1\RTE_Components.h)(0x6A075BA4)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D4C07E)
+I (C:\KeilPack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69CB51F5)
+I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D68)
+F (C:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_rst_clk.c)(0x69D4C07E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeilPack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/mdr32fxqi_rst_clk.o -MMD)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x69D4C07E)
+I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED60)
+I (RTE\_Target_1\RTE_Components.h)(0x6A075BA4)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D4C07E)
+I (C:\KeilPack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69CB51F5)
+I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D68)
+F (C:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_ssp.c)(0x69D4C07E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeilPack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/mdr32fxqi_ssp.o -MMD)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_ssp.h)(0x69D4C07E)
+I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED60)
+I (RTE\_Target_1\RTE_Components.h)(0x6A075BA4)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D4C07E)
+I (C:\KeilPack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69CB51F5)
+I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D68)
+F (C:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_uart.c)(0x69D4C07E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeilPack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/mdr32fxqi_uart.o -MMD)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h)(0x69D4C07E)
+I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED60)
+I (RTE\_Target_1\RTE_Components.h)(0x6A075BA4)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D4C07E)
+I (C:\KeilPack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69CB51F5)
+I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D68)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x69D4C07E)
+F (C:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_usb.c)(0x69D4C07E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeilPack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/mdr32fxqi_usb.o -MMD)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_usb.h)(0x69D4C07E)
+I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED60)
+I (RTE\_Target_1\RTE_Components.h)(0x6A075BA4)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D4C07E)
+I (C:\KeilPack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69CB51F5)
+I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D68)
+F (C:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/USB_Library/MDR32FxQI_usb_CDC.c)(0x69D4C07E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeilPack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/mdr32fxqi_usb_cdc.o -MMD)
+I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED60)
+I (RTE\_Target_1\RTE_Components.h)(0x6A075BA4)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D4C07E)
+I (C:\KeilPack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69CB51F5)
+I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D68)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_handlers.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_default_handlers.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_CDC.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_device.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_usb.h)(0x69D4C07E)
+F (C:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/USB_Library/MDR32FxQI_usb_device.c)(0x69D4C07E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/MDR32F9Q2I-I./RTE/_Target_1-IC:/KeilPack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-IC:/KeilPack/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc/USB_Library-D__UVISION_VERSION="543" -D_RTE_-o ./outputs/mdr32fxqi_usb_device.o -MMD)
+I (RTE\Device\MDR32F9Q2I\MDR32FxQI_config.h)(0x6A09ED60)
+I (RTE\_Target_1\RTE_Components.h)(0x6A075BA4)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h)(0x69D4C07E)
+I (C:\KeilPack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x69CB51F5)
+I (RTE\Device\MDR32F9Q2I\system_MDR32F9Q2I.h)(0x69D22D68)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_handlers.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_default_handlers.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_CDC.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\USB_Library\MDR32FxQI_usb_device.h)(0x69D4C07E)
+I (C:\KeilPack\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_usb.h)(0x69D4C07E)

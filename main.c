@@ -42,7 +42,12 @@ uint32_t last_auto_read = 0;
 extern void show_menu(void);
 extern void process_immediate_command(uint8_t cmd);
 
+    // Инициализация CDC
+static uint8_t usb_rx_buffer[64];
+
 int main(void) {
+    
+  USB_CDC_Init(usb_rx_buffer, 1, SET);
   init_CPU();
   delay_ms(200);
   init_USB();

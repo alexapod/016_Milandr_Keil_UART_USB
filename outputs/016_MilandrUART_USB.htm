@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\outputs\016_MilandrUART_USB.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\outputs\016_MilandrUART_USB.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Sun May 17 19:31:31 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Mon May 18 12:37:41 2026
 <BR><P>
 <H3>Maximum Stack Usage =        568 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -873,7 +873,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[a5]"></a>USB_CDC_Init</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, mdr32fxqi_usb_cdc.o(.text.USB_CDC_Init))
-<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_USB
+<BR><BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[79]"></a>USB_CDC_RecieveData</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, usb.o(.text.USB_CDC_RecieveData))
@@ -1179,11 +1179,10 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[a3]"></a>init_USB</STRONG> (Thumb, 132 bytes, Stack size 32 bytes, usb.o(.text.init_USB))
+<P><STRONG><a name="[a3]"></a>init_USB</STRONG> (Thumb, 116 bytes, Stack size 32 bytes, usb.o(.text.init_USB))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = init_USB &rArr; USB_CDC_Reset &rArr; USB_EP_doDataOut
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_CDC_Init
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_CDC_Reset
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_CDC_Reset
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DevicePowerOn
 <LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetSIM
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DeviceInit
@@ -1194,7 +1193,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[3c]"></a>main</STRONG> (Thumb, 928 bytes, Stack size 152 bytes, main.o(.text.main))
+<P><STRONG><a name="[3c]"></a>main</STRONG> (Thumb, 944 bytes, Stack size 152 bytes, main.o(.text.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 568 + Unknown Stack Size
 <LI>Call Chain = main &rArr; process_immediate_command &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
@@ -1212,6 +1211,7 @@ Global Symbols
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_UART
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_USB
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_CPU
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_CDC_Init
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;connect_animation
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;startup_animation
