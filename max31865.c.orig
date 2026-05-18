@@ -89,21 +89,21 @@ void MAX31865_Init(void) {
     PORT_Init(MDR_PORTB, &port);
 
     // Проверка CS
-    // send_all("Testing CS (PB4)...\r\n");
+   // send_all("Testing CS (PB4)...\r\n");
     T1_CS_LOW();
     delay_ms(10);
-    // send_all("CS LOW? ");
-    // send_all((MDR_PORTB->RXTX & PORT_Pin_4) ? "NO" : "YES");
-    // send_all("\r\n");
-    // usb_flush();
+   // send_all("CS LOW? ");
+   // send_all((MDR_PORTB->RXTX & PORT_Pin_4) ? "NO" : "YES");
+   // send_all("\r\n");
+   // usb_flush();
 
     T1_CS_HIGH();
     delay_ms(10);
-    // send_all("CS HIGH? ");
-    // send_all((MDR_PORTB->RXTX & PORT_Pin_4) ? "YES" : "NO");
-    // send_all("\r\n");
+   // send_all("CS HIGH? ");
+   // send_all((MDR_PORTB->RXTX & PORT_Pin_4) ? "YES" : "NO");
+   // send_all("\r\n");
 
-    // usb_flush();
+   // usb_flush();
 
     // === 4. Инициализация SSP2 ===
     SSP_DeInit(MDR_SSP2);
@@ -128,10 +128,10 @@ void MAX31865_Init(void) {
     // Auto-Convert + Bias ON + 50Hz filter + 2-wire
     uint8_t config_value = 0xC1;  // 0b11000001
 
-    // send_all("Writing CONFIG: 0x");
+   // send_all("Writing CONFIG: 0x");
     //send_hex(config_value);
-    // send_all("\r\n");
-    // usb_flush();
+   // send_all("\r\n");
+   // usb_flush();
 
     T1_CS_LOW();
     SSP2_Transfer(MAX31865_REG_CONFIG | 0x80);  // Write

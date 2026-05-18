@@ -27,32 +27,32 @@ extern volatile uint8_t led1_enabled, led2_enabled, led3_enabled, led4_enabled;
 =====================================================================================*/
 
 void init_UART(void) {
-  // Включаем тактирование для PORTD и UART2
-  RST_CLK_PCLKcmd(RST_CLK_PCLK_PORTD | RST_CLK_PCLK_UART2, ENABLE);
+    // Включаем тактирование для PORTD и UART2
+    RST_CLK_PCLKcmd(RST_CLK_PCLK_PORTD | RST_CLK_PCLK_UART2, ENABLE);
 
-  // Настройка PB5 (TX) и PB6 (RX)
-  PORT_InitTypeDef portInit;
-  PORT_StructInit(&portInit);
-  portInit.PORT_Pin = UART_RX | UART_TX;
-  portInit.PORT_OE = PORT_OE_IN;         // Вход (для альтернативной функции)
-  portInit.PORT_FUNC = PORT_FUNC_ALTER;  // Альтернативная функция (UART)
-  portInit.PORT_MODE = PORT_MODE_DIGITAL;
-  portInit.PORT_SPEED = PORT_SPEED_MAXFAST;
-  PORT_Init(MDR_PORTD, &portInit);
+    // Настройка PB5 (TX) и PB6 (RX)
+    PORT_InitTypeDef portInit;
+    PORT_StructInit(&portInit);
+    portInit.PORT_Pin = UART_RX | UART_TX;
+    portInit.PORT_OE = PORT_OE_IN;         // Вход (для альтернативной функции)
+    portInit.PORT_FUNC = PORT_FUNC_ALTER;  // Альтернативная функция (UART)
+    portInit.PORT_MODE = PORT_MODE_DIGITAL;
+    portInit.PORT_SPEED = PORT_SPEED_MAXFAST;
+    PORT_Init(MDR_PORTD, &portInit);
 
-  // Делитель частоты
-  UART_BRGInit(MDR_UART2, UART_HCLKdiv1);
+    // Делитель частоты
+    UART_BRGInit(MDR_UART2, UART_HCLKdiv1);
 
-  // Конфигурация UART
-  UART_InitTypeDef uartInit;
-  UART_StructInit(&uartInit);
-  uartInit.UART_BaudRate = 115200;
-  uartInit.UART_WordLength = UART_WordLength8b;
-  uartInit.UART_StopBits = UART_StopBits1;
-  uartInit.UART_Parity = UART_Parity_No;
-  uartInit.UART_FIFOMode = UART_FIFO_OFF;
-  UART_Init(MDR_UART2, &uartInit);
-  UART_Cmd(MDR_UART2, ENABLE);
+    // Конфигурация UART
+    UART_InitTypeDef uartInit;
+    UART_StructInit(&uartInit);
+    uartInit.UART_BaudRate = 115200;
+    uartInit.UART_WordLength = UART_WordLength8b;
+    uartInit.UART_StopBits = UART_StopBits1;
+    uartInit.UART_Parity = UART_Parity_No;
+    uartInit.UART_FIFOMode = UART_FIFO_OFF;
+    UART_Init(MDR_UART2, &uartInit);
+    UART_Cmd(MDR_UART2, ENABLE);
 }
 
 /*=====================================================================================
@@ -62,37 +62,37 @@ void init_UART(void) {
 // Показать главное меню
 
 void show_menu(void) {
-    
-  send_all("\r\n");
-  send_all("---------- LED & SENSOR CONTROL ---------\r\n");
-  send_all("Commands:\r\n");
-  send_all("  H/h - Help\r\n");
-  send_all("  S/s - Show system status\r\n");
-  send_all("  L/l - Verify LEDs: ON -> OFF\r\n");
-  send_all("  T/t - Read temperature (once)\r\n");
-  send_all("  A/a - Toggle auto-read (3s interval)\r\n");
-  send_all("  1..4 - Toggle LED VD1..VD6\r\n");
-  send_all("----------------------------------------\r\n");
-  send_all("\r\n");
-  usb_flush();  // <-- Принудительно отправляем ВЕСЬ вывод
+
+    send_all("\r\n");
+    send_all("---------- LED & SENSOR CONTROL ---------\r\n");
+    send_all("Commands:\r\n");
+    send_all("  H/h - Help\r\n");
+    send_all("  S/s - Show system status\r\n");
+    send_all("  L/l - Verify LEDs: ON -> OFF\r\n");
+    send_all("  T/t - Read temperature (once)\r\n");
+    send_all("  A/a - Toggle auto-read (3s interval)\r\n");
+    send_all("  1..4 - Toggle LED VD1..VD6\r\n");
+    send_all("----------------------------------------\r\n");
+    send_all("\r\n");
+    usb_flush();  // <-- Принудительно отправляем ВЕСЬ вывод
 }
 
 // Показать состояние всех светодиодов
 
 void show_status(void) {
-  char msg[128];
-  sprintf(msg,
-          "Status:\r\n"
-          "  LED1 (VD1): %s\r\n"
-          "  LED2 (VD2): %s\r\n"
-          "  LED3 (VD3): %s\r\n"
-          "  LED4 (VD4): %s\r\n",
-          led1_enabled ? "ON" : "OFF", led2_enabled ? "ON" : "OFF",
-          led3_enabled ? "ON" : "OFF", led4_enabled ? "ON" : "OFF");
+    char msg[128];
+    sprintf(msg,
+            "Status:\r\n"
+            "  LED1 (VD1): %s\r\n"
+            "  LED2 (VD2): %s\r\n"
+            "  LED3 (VD3): %s\r\n"
+            "  LED4 (VD4): %s\r\n",
+            led1_enabled ? "ON" : "OFF", led2_enabled ? "ON" : "OFF",
+            led3_enabled ? "ON" : "OFF", led4_enabled ? "ON" : "OFF");
 
-  send_all(msg);
-  // send_all("\r\n> ");
-  usb_flush();  // <-- Принудительно отправляем ВЕСЬ вывод
+    send_all(msg);
+    // send_all("\r\n> ");
+    usb_flush();  // <-- Принудительно отправляем ВЕСЬ вывод
 }
 
 /*=====================================================================================
@@ -100,98 +100,98 @@ void show_status(void) {
 =====================================================================================*/
 
 void process_immediate_command(uint8_t cmd) {
-  // Фильтр: только печатаемые ASCII символы
-  if (cmd < 32 || cmd > 126) return;
+    // Фильтр: только печатаемые ASCII символы
+    if (cmd < 32 || cmd > 126) return;
 
-  char upper_cmd = toupper(cmd);
+    char upper_cmd = toupper(cmd);
 
-  switch (upper_cmd) {
+    switch (upper_cmd) {
     case 'H':
-      show_menu();
-      //usb_flush();
-      break;
+        show_menu();
+        //usb_flush();
+        break;
 
     case 'S':
-      show_status();
-      //usb_flush();
-      break;
+        show_status();
+        //usb_flush();
+        break;
 
     case 'L':
-      send_all("Verify LEDs: ALL ON... ");
+        send_all("Verify LEDs: ALL ON... ");
 
-      // Включаем все
-      led1_enabled = led2_enabled = led3_enabled = led4_enabled = 1;
-      LED_ON(LED_ALL);
-      usb_flush();
-      delay_ms(1000);
-      send_all("OFF\r\n");
+        // Включаем все
+        led1_enabled = led2_enabled = led3_enabled = led4_enabled = 1;
+        LED_ON(LED_ALL);
+        usb_flush();
+        delay_ms(1000);
+        send_all("OFF\r\n");
 
-      // Выключаем все
-      led1_enabled = led2_enabled = led3_enabled = led4_enabled = 0;
+        // Выключаем все
+        led1_enabled = led2_enabled = led3_enabled = led4_enabled = 0;
 
-      LED_OFF(LED_ALL);
-      usb_flush();
-      break;
+        LED_OFF(LED_ALL);
+        usb_flush();
+        break;
 
     case 'T':
-      send_all("TEMP: Reading...\r\n");
-      usb_flush();
+        send_all("TEMP: Reading...\r\n");
+        usb_flush();
 
-      float t1 = MAX31865_ReadTemperature(1);
-      char msg[128];
+        float t1 = MAX31865_ReadTemperature(1);
+        char msg[128];
 
-      if (t1 < -990.0f)
-        sprintf(msg, "  T1 = ERROR (no sensor)\r\n");
-      else
-        sprintf(msg, "  T1 = %.1f C\r\n", t1);
+        if (t1 < -990.0f)
+            sprintf(msg, "  T1 = ERROR (no sensor)\r\n");
+        else
+            sprintf(msg, "  T1 = %.1f C\r\n", t1);
 
-      send_all(msg);
-      usb_flush();  // <-- Только здесь! Гарантируем отправку всего
-      break;
+        send_all(msg);
+        usb_flush();  // <-- Только здесь! Гарантируем отправку всего
+        break;
 
     case 'A':
-      auto_temp_enabled = !auto_temp_enabled;
-      if (auto_temp_enabled) {
-        send_all("AUTO-READ TEMPERATURE: ENABLED (every 3s)\r\n");
-        usb_flush();
-      } else {
-        send_all("AUTO-READ TEMPERATURE: DISABLED\r\n");
-        usb_flush();
-      }
-      break;
+        auto_temp_enabled = !auto_temp_enabled;
+        if (auto_temp_enabled) {
+            send_all("AUTO-READ TEMPERATURE: ENABLED (every 3s)\r\n");
+            usb_flush();
+        } else {
+            send_all("AUTO-READ TEMPERATURE: DISABLED\r\n");
+            usb_flush();
+        }
+        break;
 
     // --- Управление отдельными светодиодами ---
     case '1':
-      led1_enabled = !led1_enabled;
-      set_led_state(1, led1_enabled);
-      send_all(led1_enabled ? "LED1 (VD1): ON\r\n" : "LED1 (VD1): OFF\r\n");
-      usb_flush();
-      break;
+        led1_enabled = !led1_enabled;
+        set_led_state(1, led1_enabled);
+        send_all(led1_enabled ? "LED1 (VD1): ON\r\n" : "LED1 (VD1): OFF\r\n");
+        usb_flush();
+        break;
 
     case '2':
-      led2_enabled = !led2_enabled;
-      set_led_state(2, led2_enabled);
-      send_all(led2_enabled ? "LED2 (VD2): ON\r\n" : "LED2 (VD2): OFF\r\n");
-      usb_flush();
-      break;
+        led2_enabled = !led2_enabled;
+        set_led_state(2, led2_enabled);
+        send_all(led2_enabled ? "LED2 (VD2): ON\r\n" : "LED2 (VD2): OFF\r\n");
+        usb_flush();
+        break;
 
     case '3':
-      led3_enabled = !led3_enabled;
-      set_led_state(3, led3_enabled);
-      send_all(led3_enabled ? "LED3 (VD3): ON\r\n" : "LED3 (VD3): OFF\r\n");
-      usb_flush();
-      break;
+        led3_enabled = !led3_enabled;
+        set_led_state(3, led3_enabled);
+        send_all(led3_enabled ? "LED3 (VD3): ON\r\n" : "LED3 (VD3): OFF\r\n");
+        usb_flush();
+        break;
 
     case '4':
-      led4_enabled = !led4_enabled;
-      set_led_state(4, led4_enabled);
-      send_all(led4_enabled ? "LED4 (VD4): ON\r\n" : "LED4 (VD4): OFF\r\n");
-      usb_flush();
-      break;
+        led4_enabled = !led4_enabled;
+        set_led_state(4, led4_enabled);
+        send_all(led4_enabled ? "LED4 (VD4): ON\r\n" : "LED4 (VD4): OFF\r\n");
+        usb_flush();
+        break;
 
     default:
-      send_all("Unknown command. Type 'H' for help.\r\n");
-      usb_flush();
-      break;
-  }
+        send_all("Unknown command. Type 'H' for help.\r\n");
+        usb_flush();
+        break;
+    }
 }
